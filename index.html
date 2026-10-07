@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whale Signals — Follow the conviction of smart money</title>
+  <meta name="description" content="Whale Signals surfaces high-conviction capital movements from SEC filings — insider buying, institutional stakes, and activist positions — validated by backtesting and explained by AI.">
+  <link rel="canonical" href="https://getwhalesignals.com/">
+  <meta property="og:title" content="Whale Signals">
+  <meta property="og:description" content="High-conviction capital movements from SEC filings, validated by backtesting and explained by AI.">
+  <meta property="og:url" content="https://getwhalesignals.com/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐋</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo"><span class="logo-mark">🐋</span> Whale Signals</a>
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#signals">Signals</a>
+        <a href="#ai">AI Analyst</a>
+        <a href="#contact" class="btn btn-small">Request access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="pill">Now in private beta</span>
+        <h1>Follow the <span class="gradient">conviction</span> of smart money.</h1>
+        <p class="lead">
+          Whale Signals turns raw SEC filings into a ranked shortlist of high-conviction
+          ideas: insider cluster buying, new institutional stakes, and activist positions,
+          scored, backtested, and explained by AI.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn">Request early access</a>
+          <a href="#how" class="btn btn-ghost">See how it works</a>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+<pre><code><span class="muted">$</span> whale-signals rank --max-market-cap 50e9 --top 5
+
+<span class="muted">TICKER  CONVICTION  WHY</span>
+<span class="t-s">XXXX</span>    <span class="t-s">87</span>          3 insiders buying · 2 funds new stake · 13D filed
+<span class="t-a">YYYY</span>    <span class="t-a">74</span>          2 funds consensus · position 4.1% of mkt cap
+<span class="t-a">ZZZZ</span>    <span class="t-a">69</span>          insider cluster (CEO, CFO) · Congress buy
+<span class="t-b">WWWW</span>    <span class="t-b">58</span>          activist 13D · mid-cap industrial
+<span class="muted"># illustrative output</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>How it works</h2>
+        <p class="section-lead">From public filings to an explainable shortlist, in four steps.</p>
+        <div class="steps">
+          <div class="card">
+            <span class="step-num">01</span>
+            <h3>Ingest</h3>
+            <p>We continuously pull Form 4, 13F-HR and Schedule 13D/13G filings from SEC EDGAR, plus STOCK Act disclosures from U.S. Congress.</p>
+          </div>
+          <div class="card">
+            <span class="step-num">02</span>
+            <h3>Filter the noise</h3>
+            <p>Only open-market purchases count. Option grants, scheduled 10b5-1 trades, sales and index rebalancing are discarded.</p>
+          </div>
+          <div class="card">
+            <span class="step-num">03</span>
+            <h3>Detect agreement</h3>
+            <p>Cross-fund consensus and insider cluster buying reveal when independent, informed buyers converge on the same company.</p>
+          </div>
+          <div class="card">
+            <span class="step-num">04</span>
+            <h3>Validate &amp; explain</h3>
+            <p>Every signal pattern is measured against the market with an event-study backtester, then explained in plain language by our AI analyst.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signals" class="section section-alt">
+      <div class="container">
+        <h2>Signals we track</h2>
+        <div class="grid-3">
+          <div class="card accent-s">
+            <h3>Insider cluster buying</h3>
+            <p>Multiple Section 16 insiders (CEO, CFO, directors) buying their own stock within a short window, one of the cleanest signals in the academic literature.</p>
+          </div>
+          <div class="card accent-a">
+            <h3>Institutional consensus</h3>
+            <p>New stakes and large increases from top 13F filers, aggregated across funds so you see when several super-investors agree.</p>
+          </div>
+          <div class="card accent-b">
+            <h3>Activist stakes</h3>
+            <p>13D and 13G filings when an investor crosses 5% ownership, often a multi-year catalyst backed by deep due diligence.</p>
+          </div>
+          <div class="card accent-c">
+            <h3>Congressional trades</h3>
+            <p>STOCK Act disclosures cross-referenced against every signal as an independent confirmation source.</p>
+          </div>
+          <div class="card accent-p">
+            <h3>Market context</h3>
+            <p>Sector, industry, market cap and business profile for every ticker, so you can focus on under-covered mid-caps.</p>
+          </div>
+          <div class="card accent-e">
+            <h3>Statistical backtests</h3>
+            <p>Cumulative abnormal returns vs. SPY with t-stats, p-values and bootstrap confidence intervals. No edge is assumed; it is measured.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai" class="section">
+      <div class="container split">
+        <div>
+          <span class="pill">AI Analyst</span>
+          <h2>An analyst that reads every filing.</h2>
+          <p>
+            Our AI analyst reads each company's business description, filings and our
+            quantitative signal data, then answers the question that matters: is this
+            company a <strong>bottleneck</strong>, a niche supplier with real pricing power
+            the rest of the market depends on?
+          </p>
+          <ul class="checks">
+            <li>Classifies each candidate's moat and bottleneck category</li>
+            <li>Assigns an impact score that feeds back into the conviction ranking</li>
+            <li>Writes a transparent thesis citing the underlying evidence</li>
+          </ul>
+        </div>
+        <div class="card verdict">
+          <div class="verdict-head">
+            <span class="mono">TICKER: XXXX</span>
+            <span class="badge">Impact 82/100</span>
+          </div>
+          <p class="mono small muted">bottleneck_category</p>
+          <p>Specialty industrial components: sole qualified supplier for a critical subsystem.</p>
+          <p class="mono small muted">thesis</p>
+          <p>Three insiders bought on the open market within 21 days while two long-only funds opened new positions. Revenue concentration with long-term contracts suggests durable pricing power.</p>
+          <p class="mono small muted"># illustrative output</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container cta">
+        <h2>Get early access</h2>
+        <p class="section-lead">We're onboarding a small group of investors and analysts during the private beta.</p>
+        <a href="mailto:hello@getwhalesignals.com?subject=Whale%20Signals%20early%20access" class="btn">hello@getwhalesignals.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Whale Signals. Built from public SEC EDGAR and STOCK Act data.</p>
+      <p class="disclaimer">
+        Whale Signals provides research tools and information only. Nothing on this site or in
+        our product is investment advice or a recommendation to buy or sell any security.
+        Past performance and backtested results do not guarantee future returns.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
