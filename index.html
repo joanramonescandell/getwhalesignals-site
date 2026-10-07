@@ -15,15 +15,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Whale Signals",
+    "url": "https://getwhalesignals.com",
+    "email": "hello@getwhalesignals.com",
+    "foundingDate": "2026-05",
+    "founder": {
+      "@type": "Person",
+      "name": "Joan Ramon Escandell",
+      "jobTitle": "Founder & CEO",
+      "email": "joan@getwhalesignals.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/joanramonescandell",
+        "https://github.com/joanramonescandell"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
       <a href="#" class="logo"><span class="logo-mark">🐋</span> Whale Signals</a>
       <nav class="nav-links">
+        <a href="#product">Product</a>
         <a href="#how">How it works</a>
-        <a href="#signals">Signals</a>
         <a href="#ai">AI Analyst</a>
+        <a href="#about">About</a>
         <a href="#contact" class="btn btn-small">Request access</a>
       </nav>
     </div>
@@ -58,7 +79,22 @@
       </div>
     </section>
 
-    <section id="how" class="section">
+    <section id="product" class="section">
+      <div class="container">
+        <h2>The product</h2>
+        <p class="section-lead">
+          Our dashboard today tracks nearly 10,000 signals across 6,600+ tickers, with
+          AI-classified bottleneck candidates ranked by conviction.
+        </p>
+        <figure class="screenshot">
+          <img src="assets/dashboard.png" width="1440" height="900" loading="lazy"
+               alt="Whale Signals dashboard showing top bottleneck candidates ranked by conviction, with AI-written theses">
+          <figcaption>Live dashboard: bottleneck candidates, all signals, backtests and AI verdicts.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="how" class="section section-alt">
       <div class="container">
         <h2>How it works</h2>
         <p class="section-lead">From public filings to an explainable shortlist, in four steps.</p>
@@ -87,7 +123,7 @@
       </div>
     </section>
 
-    <section id="signals" class="section section-alt">
+    <section id="signals" class="section">
       <div class="container">
         <h2>Signals we track</h2>
         <div class="grid-3">
@@ -119,7 +155,7 @@
       </div>
     </section>
 
-    <section id="ai" class="section">
+    <section id="ai" class="section section-alt">
       <div class="container split">
         <div>
           <span class="pill">AI Analyst</span>
@@ -150,6 +186,29 @@
       </div>
     </section>
 
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p class="section-lead">Whale Signals is an independent, bootstrapped startup founded in 2026 and based in Spain.</p>
+        <div class="card founder">
+          <div class="avatar">JR</div>
+          <div>
+            <h3>Joan Ramon Escandell</h3>
+            <p class="role">Founder &amp; CEO</p>
+            <p>
+              Joan designs and builds the Whale Signals engine end to end: SEC data ingestion,
+              signal detection, the backtesting framework and the AI analyst.
+            </p>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/joanramonescandell" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/joanramonescandell" target="_blank" rel="noopener">GitHub</a>
+              <a href="mailto:joan@getwhalesignals.com">joan@getwhalesignals.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section section-alt">
       <div class="container cta">
         <h2>Get early access</h2>
@@ -162,6 +221,11 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 Whale Signals. Built from public SEC EDGAR and STOCK Act data.</p>
+      <p class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:hello@getwhalesignals.com">Contact</a>
+      </p>
       <p class="disclaimer">
         Whale Signals provides research tools and information only. Nothing on this site or in
         our product is investment advice or a recommendation to buy or sell any security.
